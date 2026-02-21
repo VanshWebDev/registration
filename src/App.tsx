@@ -41,7 +41,7 @@ const App: React.FC = () => {
     try {
       setLoading(true);
 
-      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/submit`, {
+      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/submit`, {
         ...values,
         dateTime: values.dateTime.toISOString(),
       });
